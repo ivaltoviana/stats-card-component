@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 375px;
+  background-color: hsl(233, 47%, 7%);
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.card-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 1rem;
+}
+
+.card-container .image-header {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.image-header {
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-header img {
+  height: 31vh;
+  filter: hue-rotate(80deg) brightness(80%);
+}
+
+.text {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.title-content {
+  margin: auto;
+  font-size: 1.8rem;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  line-height: 2.5rem;
+}
+
+.destaque {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  margin: auto;
+  padding: 1rem;
+  margin-top: -1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7rem;
+}
+
+.scores {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.3rem;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+}
+
+.companies p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: hsl(0deg 0% 100%);
+  font-size: 1.3rem;
+}
+
+.templates p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: hsl(0deg 0% 100%);
+  font-size: 1.3rem;
+}
+
+.queries p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: hsl(0deg 0% 100%);
+  font-size: 1.3rem;
+}
+
+.queries p:nth-child(1) {
+  font-variant: all-petite-caps;
+  font-size: 2rem;
+}
+
+.templates p:nth-child(1) {
+  font-variant: all-petite-caps;
+  font-size: 2rem;
+}
+
+.companies p:nth-child(1) {
+  font-variant: all-petite-caps;
+  font-size: 2rem;
+}
+
+.companies p:nth-child(2) {
+  font-variant: small-caps;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.templates p:nth-child(2) {
+  font-variant: small-caps;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 0.1rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.queries p:nth-child(2) {
+  font-variant: small-caps;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0.5rem;
+}
+.attribution a {
+  color: hsl(277, 64%, 61%);
+  text-decoration: none;
+}
