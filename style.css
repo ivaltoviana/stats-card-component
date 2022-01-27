@@ -4,8 +4,9 @@
 }
 
 body {
-  max-width: 375px;
+  min-width: 375px;
   background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
   font-family: sans-serif;
   margin: auto;
 }
@@ -30,6 +31,10 @@ body {
 .image-header img {
   height: 31vh;
   filter: hue-rotate(80deg) brightness(80%);
+}
+
+.img-desktop {
+  opacity: 0;
 }
 
 .text {
@@ -110,7 +115,7 @@ body {
 
 .companies p:nth-child(1) {
   font-variant: all-petite-caps;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .companies p:nth-child(2) {
@@ -149,4 +154,96 @@ body {
 .attribution a {
   color: hsl(277, 64%, 61%);
   text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .card-container .image-header {
+    border-radius: 0 1rem 1rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .companies {
+    padding: 2rem;
+  }
+
+  /* .templates {
+    padding: 2rem;
+  }
+
+  .queries {
+    padding: 2rem;
+    margin: 0 auto;
+  } */
+
+  .scores {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-container .image-header {
+    border-radius: 0 1rem 1rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container .image-header {
+    border-radius: 0 1rem 1rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .img-mobile {
+    opacity: 0;
+  }
+
+  .image-header .img-desktop {
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .scores {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .companies,
+  .templates,
+  .queries {
+    padding: 1rem;
+  }
 }
