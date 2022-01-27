@@ -4,10 +4,10 @@
 }
 
 body {
-  min-width: 375px;
+  max-width: 375px;
   background-color: hsl(233, 47%, 7%);
-  color: aliceblue;
   font-family: sans-serif;
+  margin: auto;
 }
 
 .card-container {
